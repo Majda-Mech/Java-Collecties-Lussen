@@ -5,17 +5,18 @@
 import java.util.Scanner;
 
 public class Main {
-    private Translator hashMapWithNumbers;
 
     public static void main(String[] args) {
-        System.out.println("Geef een nummer van 0 t/m 9:");
+        System.out.println("Give a number (0 - 9):");
         Scanner userInput = new Scanner(System.in);
-        int number1 = userInput.nextInt();
-        System.out.println("Your number is: " + number1);
+        int number = userInput.nextInt();
+        System.out.println("Your number is: " + number);
+
+        // je kan hier niet direct het nummer opvragen via hashMapWithNumbers.get(number); dan zegt intelliJ iets over static methods.
+        // je kan ook niet direct de translate functie aanroepen, want die is niet bekend hier in main.
+        // Dus dan moet je eerst een instance van de class Translator maken en daar kan je dan weer de translate functie over roepen.
         Translator trans = new Translator();
-        trans.translate(number1);
+        trans.translate(number);
     }
-
-
 
 }
