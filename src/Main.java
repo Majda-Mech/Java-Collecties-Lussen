@@ -14,13 +14,13 @@ public class Main {
         int[] numeric = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
         String[] alphabetic = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "zero"};
         boolean play = true;
-        String str = "invalid input";
+        String invalid = "invalid input";
 
         Translator translator = new Translator(numeric, alphabetic);
         Scanner scanner = new Scanner(System.in);
 
-        while (play == true) {
-            System.out.println("Type 'x' to stop\nType 'v' to translate");
+        while (play) {
+            System.out.println("\nType 'x' to stop\nType 'v' to translate");
             String input = scanner.nextLine().toLowerCase();
 
             int number;
@@ -35,10 +35,10 @@ public class Main {
                     String result = translator.translate(number);
                     System.out.println(result);
                 } else {
-                    System.out.println(str);
+                    System.out.println(invalid);
                 }
             } else {
-                System.out.println(str);
+                System.out.println(invalid);
             }
         }
     }
