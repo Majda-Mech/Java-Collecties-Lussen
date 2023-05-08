@@ -1,14 +1,14 @@
 # Opdrachtbeschrijving
 Je gaat een applicatie bouwen die getallen vertaalt van numeriek (1, 2, 3, etc.) naar alfabetisch (een, twee, drie, etc.). Je gaat die getallen vertalen door gebruik te maken van een HashMap. Je zet de numerieke getallen als sleutel (key) en de alfabetische getallen als waarde (value) in de HashMap. Vervolgens vraag je de gebruiker om een input van 0 t/m 9 te geven en ga je dat "vertalen" door simpelweg de waarde uit de HashMap te vragen met de bijbehorende sleutel en dat terug te geven aan de gebruiker.
 
-**Randvoorwaarden**
+** Randvoorwaarden**
 De opdracht moet voldoen aan de volgende voorwaarden:
 
 In je main methode staan twee arrays (1 numeriek en 1 alfabetisch), een boolean variabele, een Translator object en een Scanner object;
 Je project bevat 1 Translator class met daarin een HashMap variabele, een constructor met 2 arrays als parameter en een translate functie;
 De logica van de applicatie wordt gedraaid in een while(boolean)-loop in je main methode.
 
-**Stappenplan**
+** Stappenplan**
 Let op: het is uitdagender om jouw eigen stappenplan te maken. Als je niet zo goed weet waar je moet beginnen, kun je onderstaand stappenplan gebruiken:
 
 Maak in je src-map een Main class aan. Definieer in deze Main class een public static void main (String[] args) methode.
@@ -30,4 +30,4 @@ if: Als de input "x" is, dan zet je play naar false.
 else if: Als de input "v" is, dan print je eerst "Type een cijfer in van 0 t/m 9", vervolgens sla je het resultaat van scanner.nextInt() op in een variabele int number, voeg nog een scanner.nextLine(); toe op de volgende regel (scanner.nextInt doet dit namelijk niet van zichzelf) en als laatste check je met een if-statement of
 if: number kleiner is dan 10, dan sla je de waarde van translator.translate(number) op in String result en print je "De vertaling van " + number + " is " + result.
 else: anders dan print je ongeldig
-else: Als de input dus iets anders dan "x" of "v" is, dan print je ongeldig
+else: Als de input dus iets anders dan "x" of "v" is, dan print je ongeldig# Java-Collecties-Lussen
